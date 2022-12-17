@@ -1,11 +1,12 @@
+//#define SECURE_MODE_OFF
+//#include <stdlib.h>
 #include "automem.h"
 int main(){
-    void *p;
-    minit();
-    for(int i = 0;i < 100;i++){
-        p = malloc(10);
+    void *p, *q;
+    for(int i = 0;i < 10000;i++){
+        p = malloc(100);
+        q = malloc(1);
     }
-    free(p);
     memclear();
 }
 
