@@ -4,9 +4,9 @@
 #include <stddef.h>
 
 void *malloc_secure(size_t byte);
-void *calloc_secure(size_t byte);
-void *reaalloc_secure(size_t byte);
-void *creaalloc_secure(size_t byte);
+void *calloc_secure(size_t n, size_t size);
+void *realloc_secure(void *p, size_t byte);
+void *crealloc_secure(void *p, size_t byte);
 void free_secure(void *p);
 void memclear();
 #endif
